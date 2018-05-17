@@ -1,0 +1,27 @@
+/* body {
+    color: fuchsia;
+} */
+
+h1 {
+    color: teal;
+}
+
+h2 {
+    color: green;
+}
+
+a {
+    color: fuchsia;
+}
+
+hr {
+    border-color: red;
+}
+
+p { /* tous les p ont un fond jaune */
+    background-color: yellow;
+}
+
+li p { /* tous les p dans des li ont un fond bleu */
+    background-color: lightblue;
+}

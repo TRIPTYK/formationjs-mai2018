@@ -1,0 +1,49 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    /* font-size: 30px;*/
+    font-size: 1.4em;
+    /* font-size: 140%; */
+}
+
+h1 {
+    /* font-family: Impact, Charcoal, sans-serif; */
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    font-family: 'icelandregular';
+    font-size: 3em;
+}
+
+p {
+    font-size: 20px; /* pixels = taille absolue */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* j'ai importé la roboto en 400 et en 700, je lui dis laquelle utiliser */
+
+    text-align: justify; /* left, right, justify, center */
+    text-align-last: right; /* left, right, justify, center */
+
+    letter-spacing: 0.05em;
+    line-height: 2;
+    text-indent: 20px;
+    text-decoration: line-through; /*none, underline, overline, line-through*/
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 1em; /* em = taille relative */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic; /*normal*/
+    /* font-weight: bold; */ /*normal */
+}
+
+mark {
+    /* font-size: 2em; */
+    font-size: 2rem; /*root em*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 300
+}

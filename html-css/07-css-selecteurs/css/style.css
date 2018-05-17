@@ -1,0 +1,50 @@
+body {
+    background-color: deeppink;
+}
+
+#para2 {
+    background-color: coral;
+}
+
+p {
+    background-color: yellow;
+}
+
+#para5 {
+    background-color: coral;
+}
+
+.accent {
+    background-color: blue;
+}
+
+.autre {
+    color: fuchsia;
+}
+
+h1 {
+    background-color: green;
+}
+
+/*
+l'id sera tjrs supérieur aux autres sélecteurs
+*/
+
+/* selecteur {
+    propriété: valeur;
+    propriété: valeur;
+    propriété: valeur;
+} */
+
+strong {
+   background-color: white;
+   color: red;
+}
+
+h1 strong { /*tous les strong qui se trouvent dans un h1*/
+    background-color: lightpink;
+}
+
+p strong { /*tous les strong qui sont dans un p*/
+    background-color: green;
+}

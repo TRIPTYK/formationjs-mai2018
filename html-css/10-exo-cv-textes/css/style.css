@@ -1,0 +1,69 @@
+/* body {
+    color: fuchsia;
+} */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo:hover {
+    text-align:center;
+}
+
+h1 {
+    color: teal;
+    font-family: 'Titan One', cursive;
+    font-weight: normal;
+}
+
+h2 {
+    color: green;
+    font-family: 'Titan One', cursive;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Titan One', cursive;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    color: fuchsia;
+    text-decoration: none;
+}
+
+a:hover  {
+    color: pink;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:focus {
+    color: blue;
+}
+
+hr {
+    border-color: red;
+}
+
+p { /* tous les p ont un fond jaune */
+    background-color: yellow;
+}
+
+ul {
+    /* list-style: none; */
+    list-style-type: square;
+}
+
+li p { /* tous les p dans des li ont un fond bleu */
+    background-color: lightblue;
+}

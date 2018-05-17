@@ -1,0 +1,64 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container {
+    /* pour centrer un bloc, je dois lui donner une largeur ET lui mettre une margin auto à gauche et à droite */
+    min-width: 500px;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px 0;
+    margin-bottom: 0; /* je supprime la margin bottom par défaut du h1, pour laisser la main à la margin-top du ul qui le suit et donc avoir des hauteurs de marges plus cohérentes */
+}
+
+ul {
+    list-style: none;
+    width: 250px;
+    padding: 0;
+    margin-left: 0.6em;
+}
+
+/* li {
+    background-color: pink;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 250px;
+} */
+
+a {
+    display: block; /* je convertis mon a en block pour rendre tout le lien "bouton" clickable */
+    background-color: pink;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    /* width: 250px; */
+    color: #333;
+    text-decoration: none;
+}
+
+.bloc {
+    background-color: rgb(170, 224, 170);
+    padding: 1px 2em 2em 2em;
+    margin-bottom: 1em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8em;
+}

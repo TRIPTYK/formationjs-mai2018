@@ -1,0 +1,83 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    margin-bottom: 1em;
+}
+
+h1 {
+    padding: 2em;
+    background-color: rgb(153, 238, 128);
+    border-top: 5px dashed salmon;
+    border-right: 10px double navy;
+    border-bottom: 30px ridge fuchsia;
+    border-left: none;
+
+    text-shadow: 1px 1px 1px red;
+}
+
+.div1 {
+    border: 10px solid #ff10a3;
+    /*
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ff10a3;
+    */
+
+    /*
+    solid
+    dotted
+    double (min 3px)
+    dashed
+    inset
+    outset
+    groove (min 2px)
+    ridge (min 2px)
+    */
+
+    border-radius : 20px;
+    border-radius: 10px 5px 0 30px;
+    border-radius: 20px 0;
+    border-radius: 50%;
+    border-radius: 30px / 10px;
+    border-radius: 20px 10px 0 40px / 20px 30px 0 15px;
+
+
+    -moz-box-shadow: 10px 10px 10px 10px blue;
+    -webkit-box-shadow: 10px 10px 10px 10px blue;
+    box-shadow: 10px 10px 10px 10px blue;
+    /*décalage horizontal, décalage vertical, intensité du flou, augmentation ou diminution de la taille de l'ombre, couleur*/
+}
+.div2 {
+    border: 10px dotted #ff10a3;
+}
+.div3 {
+    border: 10px double #ff10a3;
+}
+.div4 {
+    border: 10px dashed #ff10a3;
+}
+.div5 {
+    border: 10px inset #ff10a3;
+}
+.div6 {
+    border: 10px outset #ff10a3;
+}
+.div7 {
+    border: 10px groove #ff10a3;
+}
+.div8 {
+    border: 10px ridge #ff10a3;
+}
+
+
+
+.top {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid #000;
+}

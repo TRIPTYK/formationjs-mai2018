@@ -1,0 +1,39 @@
+body {
+    /* background-color: #80adf5; */
+    /* background-image: url(../images/bg.gif); */
+    /* background-repeat: no-repeat; */ /*repeat-x, repeat-y, repeat */
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+    /* background-position: right bottom; */
+    /* background-position: 50% 100px; */
+    /* background-position: right 5px bottom 100px; */
+    /* background-size: 100% auto; */
+
+    /* background: #80adf5 url(../images/bg.gif) no-repeat fixed 50% 100px;
+    background-size: 100% auto; */
+    /* background-blend-mode: lighten */
+
+
+    /* background: url('../images/soleil.png') no-repeat, #a0dfeb url('../images/ciel.jpg') no-repeat fixed center center;
+    background-size: auto, cover; */
+
+    background-image: url('../images/soleil.png'), url('../images/ciel.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
+    background-position: right top, center center;
+    background-size: auto, cover;
+
+
+
+    background: #ffb7b7;
+    background: -moz-linear-gradient(top, #ffb7b7 0%, #ff3030 100%);
+    background: -webkit-linear-gradient(top, #ffb7b7 0%,#ff3030 100%);
+    background: linear-gradient(to bottom, #ffb7b7 0%,#ff3030 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb7b7', endColorstr='#ff3030',GradientType=0 );
+}
+
+h1 {
+    /* background-color: #e8f719; */
+    background-color: rgba(232, 247, 25, 0.5);
+    /* opacity: 0.5; */
+}

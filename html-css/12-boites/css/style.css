@@ -1,0 +1,105 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+div {
+    background-color: purple;
+    /* width: 80%; */
+    /* width: 500px; */
+    max-width: 1000px;
+    min-width: 500px;
+    /* height: 300px; */
+    /* min-height: 300px; */
+
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    height: 100vw; /* 100% de la largeur de la fenêtre*/
+    height: 100vmax; /*100% de la taille la plus grande (hauteur ou largeur) de la fenêtre*/
+    height: 100vmin; /*100% de la taille la plus petite (hauteur ou largeur) de la fenêtre*/
+
+    /* padding-top: 1px; */ /* pour rentrer la marge du p dans la div */
+    /* overflow: hidden; */ /*visible*/
+    padding: 30px 0 0 0;
+    margin: 0 0 30px 0;
+}
+
+div p {
+    background-color: yellowgreen;
+    /* width: 250px; */
+}
+
+p {
+    background-color: lightcoral;
+    /* width: 80%; */
+    /* height: 20%; */
+    height: 50px;
+
+    /* padding: 20px; */ /* marge intérieure */
+    /* padding-bottom: 40px; */
+    /* padding: 10px 15px 50px 0; */ /* top right bottom left */
+    padding: 5px 30px; /*top bottom      right left*/
+
+
+    margin: 30px;
+    margin: 0 30px 30px 30px;
+
+    /* overflow: hidden; */ /* tout ce qui est dépasse est coupé */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+/* p:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100px;
+    background-color: red;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+} */
+
+
+/****************************************************/
+/*         Personnalisation de la scrollbar         */
+/****************************************************/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 31px none #ffffff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #a3a3a3;
+}
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #f2f2f2;
+}
+::-webkit-scrollbar-track:active {
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

@@ -1,0 +1,61 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* width: 250px; */ /* si je mets la taille ici pour tous les ul, alors les liens du sous-menus vont déborder, alors, j'ai préféré mettre la taille directement dans le .menu */
+}
+
+.menu {
+    margin: 1em auto; /* pour centrer le menu */
+    width: 250px;
+}
+
+/* .menu > li > a { // sélectionne les a descendant direct de li, descendant direct de .menu
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #333;
+} */
+
+/* .menu > li:first-child { */ /* sélectionne le premier li(:first-child) descendant direct(>), existe aussi :last-child et :nth-child(n) */
+/*  background-color: green;
+} */
+
+a {
+    background-color: lightblue;
+    display: block;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #333;
+    border-right: 20px solid rgb(186, 245, 49);
+    border-radius: 0 20px 0 0;
+}
+
+/* a:hover { // Si je le laisse ici, le sous-menu ne prendra pas le hover
+    border-color: fuchsia;
+    background-color: darkgoldenrod;
+} */
+
+.sous-menu {
+    margin-left: 1em;
+}
+
+.sous-menu a { /* ou : li li a */
+    background-color: pink;
+    border-right: none;
+    border-left: 10px solid rgb(72, 216, 103);
+    border-radius: 0 30px;
+}
+
+/* .sous-menu a:hover { // Si je laisse le a:hover audessus, il n'est pas pris par le a du sous-menu et donc je suis obligée de repréciser le hover ici
+    border-color: fuchsia;
+    background-color: rgb(243, 173, 42);
+} */
+
+a:hover { /*je le mets en dernier pour qu'il soit pris en compte par les a du sous-menu également  */
+    border-color: fuchsia;
+    background-color: darkgoldenrod;
+}
