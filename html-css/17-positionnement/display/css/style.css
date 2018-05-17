@@ -1,0 +1,49 @@
+/* body {
+    text-align:center;
+} */
+
+div {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(48, 199, 179);
+}
+
+.div2 {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(127, 55, 168);
+}
+
+.div3 {
+    height: 300px;
+    width: 250px;
+    background-color: rgb(173, 194, 83);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: yellow;
+}
+
+li {
+    /* padding: 1em; */
+    background-color: pink;
+    /* margin: 0.5em; */
+    width: 20%;
+    display: inline-block;
+}
+
+a {
+    display: block;
+    background-color: red;
+    margin: 1em
+}
