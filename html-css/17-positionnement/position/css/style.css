@@ -1,0 +1,54 @@
+.div1 {
+    height: 200px;
+    width: 600px;
+    background-color: rgb(216, 139, 139);
+    position: relative;
+    top: 100px;
+    left: 50px;
+    z-index: 10;
+}
+.div2 {
+    height: 300px;
+    width: 500px;
+    background-color: rgb(146, 112, 185);
+    position: absolute;
+    /* top: 100px;
+    left: 50px; */
+    right: 50%;
+    bottom: 50%;
+}
+.div3 {
+    /* height: 400px;
+    width: 400px; */
+    height: 60px;
+    background-color: rgb(125, 201, 141);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* pour être sûre qu'il restera tjrs audessus de tous */
+}
+.div4 {
+    height: 500px;
+    width: 300px;
+    background-color: rgb(202, 204, 76);
+    position: relative;
+}
+
+.enfant {
+    height: 100px;
+    width: 100px;
+    background-color: fuchsia;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.div5 {
+    height: 600px;
+    width: 200px;
+    background-color: rgb(95, 149, 194);
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
