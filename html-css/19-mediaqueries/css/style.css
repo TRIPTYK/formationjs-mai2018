@@ -1,0 +1,22 @@
+body {
+    background-color: pink;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* @media screen and (max-width: 450px) { } */
+@media screen and (min-width: 600px) { /* pour écrans plus grand que 600px */
+    body {
+        background-color: rgb(73, 146, 170);
+    }
+    ul {
+        list-style: disc;
+    }
+    li {
+        float:left;
+        margin-right: 1em;
+    }
+}
