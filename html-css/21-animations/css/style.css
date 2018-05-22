@@ -1,0 +1,31 @@
+.btn{
+	display:block;
+	width:150px;
+	margin:50px auto;
+	line-height:80px;
+	text-decoration:none;
+	font-family: sans-serif;
+	background:#7d62f7;
+	color:#ccc;
+	font-size:20px;
+    text-align: center;
+    transition:all .5s;
+}
+.btn:hover{
+	background:#ccc;
+	color:#7d62f7;
+}
+.btn2{
+    animation-name:example;
+    animation-duration:4s;
+    animation-iteration-count: 4;
+    
+}
+
+@keyframes example{
+    /* from{background:#7d62f7; color:#ccc;}
+    to{background:#ccc; color:#7d62f7;} */
+    0% {background:#7d62f7; color:#ccc;margin-left:0;}
+    50% {background:#ccc; color:#7d62f7;margin-left:250px;}
+    100% {background:#7d62f7; color:#ccc;margin-left:0;}
+}

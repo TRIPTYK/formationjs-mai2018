@@ -1,0 +1,19 @@
+.btn{
+	display:block;
+	width:150px;
+	margin:50px auto;
+	line-height:80px;
+	text-decoration:none;
+	font-family: sans-serif;
+	background:#7d62f7;
+	color:#ccc;
+	font-size:20px;
+	text-align: center;
+}
+.btn:hover{
+	background:#ccc;
+	color:#7d62f7;
+}
+.btn2{
+	transition:all .5s;
+}
