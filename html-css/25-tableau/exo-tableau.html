@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux</title>
+    <style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid #333;
+        text-align: center;
+        padding: 0.2em 0.6em;
+    }
+    thead {
+        background-color: rgb(131, 131, 131);
+        color: #fff
+    }
+    tbody td:first-child {
+        background-color: rgb(214, 214, 214);
+    }
+    .semaine {
+        background-color: rgb(214, 214, 214);
+    }
+    .tache1 {
+        background-color: rgb(254, 255, 186);
+    }
+    .tache2 {
+        background-color: rgb(206, 248, 255);
+    }
+    .tache3 {
+        background-color: rgb(255, 214, 250);
+    }
+    .tache4 {
+        background-color: rgb(207, 255, 231);
+    }
+    .tache5 {
+        background-color: rgb(255, 228, 187);
+    }
+    .tache6 {
+        background-color: rgb(208, 215, 255);
+    }
+    .tache7 {
+        background-color: rgb(255, 196, 196);
+    }
+    </style>
+</head>
+<body>
+
+    <p>planning des tâches</p>
+    <table>
+        <thead>
+             <tr>
+                 <th rowspan="2">Equipes</th>
+                 <th colspan="6">Janvier</th>
+                 <th rowspan="2"></th>
+             </tr>
+             <tr>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th colspan="2">Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lola</td>
+                <td colspan="4" class="tache1">Vaisselle</td>
+                <td colspan="2" class="tache3">Aspirateur</td>
+                <td rowspan="2" class="semaine">Semaine 1</td>
+            </tr>
+            <tr>
+                <td>Mattéo</td>
+                <td colspan="3" class="tache1">Vaisselle</td>
+                <td colspan="3" class="tache4">Poussières</td>
+            </tr>
+
+            <tr>
+                <td>Lola</td>
+                <td class="tache2">Chambre</td>
+                <td colspan="4" class="tache4">Poussières</td>
+                <td class="tache5">Poubelles</td>
+                <td rowspan="2" class="semaine">Semaine 2</td>
+            </tr>
+            <tr>
+                <td>Mattéo</td>
+                <td colspan="2" class="tache2">Chambre</td>
+                <td colspan="4" class="tache3">Aspirateur</td>
+            </tr>
+
+            <tr>
+                <td>Lola</td>
+                <td colspan="3" class="tache6">Vitres</td>
+                <td colspan="3" class="tache7">Lessive</td>
+                <td rowspan="2" class="semaine">Semaine 3</td>
+            </tr>
+            <tr>
+                <td>Mattéo</td>
+                <td class="tache5">Poubelles</td>
+                <td colspan="5" class="tache1">Vaisselle</td>
+            </tr>
+
+            <tr>
+                <td>Lola</td>
+                <td colspan="4" class="tache4">Poussières</td>
+                <td colspan="2" class="tache2">Chambre</td>
+                <td rowspan="2" class="semaine">Semaine 4</td>
+            </tr>
+            <tr>
+                <td>Mattéo</td>
+                <td colspan="3" class="tache3">Aspirateur</td>
+                <td colspan="3" class="tache2">Chambre</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td colspan="2" rowspan="2">1.3 + 1.4</td>
+            <!-- <td>1.4</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">2.1 + 2.2</td>
+            <!-- <td>2.2</td> fusionnée avec la 2.1 -->
+            <!-- <td>2.3</td>
+            <td>2.4</td> fusionnées avec la 1.3 et la 1.4 -->
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td rowspan="2">3.2 + 4.2</td>
+            <td>3.3</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <!-- <td>4.2</td> fusionnée avec la 3.2 -->
+            <td colspan="2">4.3 + 4.4</td>
+            <!-- <td>4.4</td> fusionnée avec la 4.3 -->
+        </tr>
+    </table>
+
+    <br />
+
+    <table style="width:500px; height: 300px;">
+        <thead>
+            <tr>
+                <th><p style="font-family: Verdana;">Nom</p></th>
+                <th>Prénom</th>
+                <th>Ville</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Ville</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Belkheir</td>
+                <td>Anissa</td>
+                <td>Mons</td>
+            </tr>
+            <tr>
+                <td>Bertrand</td>
+                <td>Gilles</td>
+                <td>Hyon</td>
+            </tr>
+            <tr>
+                <td>Meermans</td>
+                <td>Stéphane</td>
+                <td>Overijs</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
