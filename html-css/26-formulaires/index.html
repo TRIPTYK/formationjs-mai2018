@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <form id="monForm" action="traitement.php" method="post"> toujours mettre en post, mais pour le cours, je mets en get pour voir les informations passées -->
+    <form id="monForm" action="traitement.php" method="get" target="_blank">
+
+        <p>
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required="required" />
+        </p>
+        <p>
+            <label for="prenom">Prénom : </label>
+            <input type="text" id="prenom" name="prenom" value="Anissa" />
+        </p>
+        <p>
+            <label for="password">Mot de passe : </label>
+            <input type="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="msg">Message : </label>
+            <textarea id="msg" name="msg"></textarea>
+        </p>
+
+        <p>
+            <label for="mail">Email : </label>
+            <input type="email" id="mail" name="mail" />
+            <!-- <input type="text" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" > -->
+        </p>
+        <p>
+            <label for="tel">Téléphone : </label>
+            <input type="tel" id="tel" name="tel" />
+        </p>
+        <p>
+            <label for="url">URL : </label>
+            <input type="url" id="url" name="url" />
+        </p>
+        <p>
+            <label for="num">Number : </label>
+            <input type="number" id="num" name="num" min="10" max="36" step="2" />
+        </p>
+        <p>
+            <label for="range">Range : </label>
+            <input type="range" id="range" name="range" min="10" max="36" step="3" />
+        </p>
+        <p>
+            <label for="date">Date : </label>
+            <input type="date" id="date" name="date" />
+        </p>
+        <p>
+            <label for="couleur">Couleur : </label>
+            <input type="color" id="couleur" name="couleur" />
+        </p>
+
+        <p>
+            <label for="file">File : </label>
+            <input type="file" id="file" name="file" />
+        </p>
+
+        <p>
+            Quel est votre style de musique préféré ?<br />
+
+            <input type="checkbox" name="musique" id="rock" value="rock">
+            <label for="rock">Rock</label><br />
+
+            <input type="checkbox" name="musique" id="rap" value="rap">
+            <label for="rap">Rap</label><br />
+
+            <input type="checkbox" name="musique" id="dance" value="dance">
+            <label for="dance">Dance</label><br />
+
+            <input type="checkbox" name="musique" id="techno" value="techno">
+            <label for="techno">Techno</label>
+        </p>
+
+        <p>
+            Quel est le style de musique que vous détestez ?<br />
+
+            <input type="checkbox" name="beurk" id="rock2" value="rock">
+            <label for="rock2">Rock</label><br />
+
+            <input type="checkbox" name="beurk" id="rap2" value="rap">
+            <label for="rap2">Rap</label><br />
+
+            <input type="checkbox" name="beurk" id="dance2" value="dance">
+            <label for="dance2">Dance</label><br />
+
+            <input type="checkbox" checked="checked" name="beurk" id="techno2" value="techno">
+            <label for="techno2">Techno</label>
+        </p>
+
+        <p>
+            Quel est votre genre ? <br />
+            <input type="radio" name="genre" id="homme" value="h">
+            <label for="homme">Homme</label><br />
+
+            <input type="radio" checked name="genre" id="femme" value="f">
+            <label for="femme">Femme</label>
+        </p>
+
+        <p>
+            <label for="pays">Quel est votre pays d'origine ?</label>
+            <select id="pays" name="pays">
+                <option value="be">Belgique</option>
+                <option value="fr">France</option>
+                <option value="it">Italie</option>
+                <option value="dz" selected>Algérie</option>
+                <option value="tu">Turquie</option>
+            </select>
+        </p>
+
+        <input type="submit" value="C'est parti mon kiki !" />
+        <input type="reset" value="vider le formulaire" />
+        <input type="button" value="bouton">
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAyL341W7w01z_mhuzZBU9zaOMXCOQVtq7Dw-6c7lqOYJDBe_9">
+    </form>
+    
+
+    <button form="monForm" formaction="page.php" formmethod="post">Je mets mon texte ici</button>
+
+
+</body>
+</html>

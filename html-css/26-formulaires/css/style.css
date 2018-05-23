@@ -1,0 +1,12 @@
+label[for="nom"]  { /*sélectionne le label qui a un attribut for qui est égal à "nom" */
+    color: red;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    vertical-align: top;
+    /* resize: none;  */
+    resize: vertical;
+}
+
