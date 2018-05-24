@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo formulaire</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="traitement.php" method="post">
+
+            <ul>
+                <li>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="nom">Nom:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="nom" id="nom" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="prenom">Prénom:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="prenom" id="prenom" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="adresse">Adresse</label>
+                            </li>
+                            <li>
+                                <input type="text" name="adresse" id="adresse" />
+                                <input type="text" name="adresse" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <ul>
+                        <li>
+                            <label for="msg">Message:</label>
+                        </li> 
+                        <li>
+                            <textarea id="msg" name="msg"></textarea>
+                        </li> 
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                Genre:
+                            </li>
+                            <li>
+                                <input type="radio" name="genre" id="homme" value="h"><label>Homme</label>
+                                <input type="radio" name="genre" id="femme" value="f"><label>Femme</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <ul>
+                            <li><label for="province">Province:</label></li>
+                            <li>
+                                <select name="province" id="province">
+                                        <option value="Hainaut">Hainaut</option>
+                                        <option value="Namur">Namur</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Liege">Liège</option>
+                                        <option value="BrabantW">Brabant Wallon</option>
+                                        <option value="BrabantF">Brabant Flamand</option>
+                                        <option value="Limbourg">Limbourg</option>
+                                        <option value="Anvers">Anvers</option>
+                                        <option value="FlandreOr">Flandre Orientale</option>
+                                        <option value="FlandreOc">Flandre Occidentale</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <input type="submit">
+                        <input type="reset">
+                    </fieldset>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+    
+</body>
+</html>
