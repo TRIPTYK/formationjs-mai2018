@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    background-color: rgb(255, 225, 225);
+}
+
+section {
+    width: $container;
+    background-color: red;
+    @include clearfix;
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     clear: both;
+    // }
+}
+div {
+    float: left;
+}
+.bloc1 {
+    background-color: $couleur-principale;
+    width: $largeur;
+    h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    a {
+        // text-decoration: none;
+        // color: rgb(204, 28, 166);
+        @include bouton(#4ee2a9, false);
+        // &:hover {
+        //     color: rgb(90, 192, 86);
+        // }
+        // .de & {
+        //     background-color: #fff;
+        // }
+    }
+}
+
+.bloc2 {
+    // width: $largeur/2;
+    width: $sidebar;
+    background-color: $couleur-principale;
+    a {
+        @include bouton($bgc: #dff78a, $bc: blue);
+    }
+}
