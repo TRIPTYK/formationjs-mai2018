@@ -1,0 +1,70 @@
+h1 {
+    // background-color: rgb(165, 241, 212);
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    // padding: 0.4em 0;
+    position: relative;
+    margin: 2rem;
+    overflow: hidden;
+    border-bottom: 2px solid #85cbd4;
+    &:hover {
+        .bg {
+            animation: monter 500ms forwards;
+        }
+        .text {
+            color: #fff;
+        }
+    }
+    .text {
+        position: relative;
+        z-index:5;
+    }
+    .bg {
+        display: block;
+        width: 110%;
+        height: 110%;
+        background-color: #85cbd4;
+        position: absolute;
+        top: 100%;
+        left: -5%;
+        animation: descendre 500ms forwards;
+    }
+}
+
+@keyframes monter {
+    0% {
+        top: 100%;
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes descendre {
+    0% {
+        top: 0;
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        top: 100%;
+    }
+}
