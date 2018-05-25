@@ -2,3 +2,12 @@ $couleur-principale: rgb(226, 181, 247);
 $largeur: 600px;
 $container: 960px;
 $sidebar: $container - $largeur;
+
+
+$bp-mobile : 30em;
+$bp-tablet : 60em;
+
+$susy: (
+    math: static,
+    column-width: 4em
+);

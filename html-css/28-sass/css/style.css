@@ -3,7 +3,6 @@ body {
 }
 
 section {
-  width: 960px;
   background-color: red;
 }
 
@@ -50,5 +49,36 @@ div {
   border-radius: 6px;
   box-shadow: 5px 5px 1px rgba(197, 240, 43, 0.5);
   border: 1px solid blue;
+}
+
+@media screen and (min-width: 60em) {
+  .bloc2 {
+    background-color: green;
+  }
+}
+
+.colonnes {
+  background-color: #5f589b;
+  width: 59em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.colonnes:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.colonnes > div {
+  background-color: yellow;
+  width: 19em;
+  float: left;
+  margin-right: 1em;
+}
+
+.colonnes > div:last-child {
+  float: right;
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

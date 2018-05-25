@@ -1,0 +1,104 @@
+@mixin transform($t) {
+    -webkit-transform: $t;
+    -moz-transform: $t;
+    transform: $t;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    } 
+}
+
+div {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    margin: 50px auto 0 auto;
+
+    transform-origin: 0 0;
+    // -webkit-transform: rotate(45deg);
+    // -moz-transform: rotate(45deg);
+    // transform: rotate(45deg);
+    // @include transform(rotate(45deg));
+
+    // @include transform( translate(100px, 200px) );
+    // @include transform( translateX(100px) translateY(200px) );
+
+    // centrer un élément verticalement et horizontalement en absolute
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // @include transform( translate(-50%, -50%) );
+
+    // @include transform( scale(1, 2) );
+
+    // transition: transform 0.5s 1s, background-color 1s;
+
+    // &:hover {
+    //     @include transform( scale(1.1) );
+    //     background-color: yellow;
+    // }
+
+    // @include transform( skew(10deg, 20deg) );
+
+    // @include transform( rotate(45deg) scaleY(1.2) skew(-15deg) );
+
+    -webkit-animation: monAnim 5s alternate 10;
+    animation: monAnim 5s alternate 10;
+    // animation: monAnim 5s alternate reverse infinite backwards forwards;
+    // je mets tout ensemble mais certaines valeurs ne sont pas compatibles entre elles.
+}
+
+// @-webkit-keyframes monAnim {
+//     // from {}
+//     // to {}
+//     0% {
+//         background-color: red;
+//     }
+//     15% {
+//         background-color: green;
+//     }
+//     49% {
+//         background-color: fuchsia;
+//     }
+//     100% {
+//         background-color: blue;
+//     }
+// }
+
+// @keyframes monAnim {
+//     // from {}
+//     // to {}
+//     0% {
+//         background-color: red;
+//     }
+//     15% {
+//         background-color: green;
+//     }
+//     49% {
+//         background-color: fuchsia;
+//     }
+//     100% {
+//         background-color: blue;
+//     }
+// }
+
+
+@include keyframes(monAnim) {
+    0% {
+        background-color: red;
+    }
+    15% {
+        background-color: green;
+    }
+    49% {
+        background-color: fuchsia;
+    }
+    100% {
+        background-color: blue;
+    }
+}

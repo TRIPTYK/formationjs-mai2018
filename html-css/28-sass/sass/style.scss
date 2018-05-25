@@ -1,12 +1,13 @@
 @import 'variables';
 @import 'mixins';
+@import 'susy';
 
 body {
     background-color: rgb(255, 225, 225);
 }
 
 section {
-    width: $container;
+    // width: $container;
     background-color: red;
     @include clearfix;
     // &:after {
@@ -35,6 +36,9 @@ div {
         //     background-color: #fff;
         // }
     }
+    @include breakpoint(screen, $bp-tablet) {
+
+    }
 }
 
 .bloc2 {
@@ -43,5 +47,25 @@ div {
     background-color: $couleur-principale;
     a {
         @include bouton($bgc: #dff78a, $bc: blue);
+    }
+    @include breakpoint(screen, $bp-tablet) {
+        background-color: green;
+    }
+}
+
+
+
+.colonnes {
+    background-color: rgb(95, 88, 155);
+    @include container(59em); // donne un max-width: 60em + centrer la box + clearfix
+
+    > div {
+        background-color: yellow;
+        @include span(4 of 12);
+        // @include span(1 of 3);
+        &:last-child {
+            @include last;
+            // @include span(4 of 12 last);
+        }
     }
 }

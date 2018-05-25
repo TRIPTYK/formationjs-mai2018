@@ -18,3 +18,10 @@
         border: 1px solid $bc;
     }
 }
+
+@mixin breakpoint($media, $bp) {
+    @media #{$media} and (min-width: $bp) {
+    // @media screen and (min-width: 960px)
+        @content;
+    }
+}
