@@ -92,3 +92,34 @@ alert(nombre);
 // si 2 : tiroir fermé à clé
 // si 3 : tiroir vide
 // si 4 : contient des chaussettes
+
+var tiroir = parseInt(prompt("Choisissez un tiroir - de 1 à 4"));
+
+if (tiroir == 1) {
+    alert("ce tiroir contient des vetements");
+} else if (tiroir == 2) {
+    alert("ce tiroir est fermé à clé");
+} else if (tiroir == 3) {
+    alert("ce tiroir est vide");
+} else if (tiroir == 4) {
+    alert("ce tiroir contient des chaussettes");
+} else {
+    alert("ce tiroir n'existe pas");
+}
+
+switch(tiroir) { //fait une comparaison ===
+    case 1: 
+        alert("ce tiroir contient des vetements");
+        break;
+    case 2:
+        alert("ce tiroir est fermé à clé");
+        break;
+    case 3:
+        alert("ce tiroir est vide");
+        break;
+    case 4:
+        alert("ce tiroir contient des chaussettes");
+        break;
+    default: 
+        alert("ce tiroir n'existe pas");
+}
