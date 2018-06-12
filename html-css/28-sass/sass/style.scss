@@ -69,3 +69,12 @@ div {
         }
     }
 }
+
+.galerie { // le contenant
+    @include container;
+    .items { // les éléments
+        @include gallery(3 of 12); // 3 of 12 = 4 colonnes
+        background-color: pink;
+        margin-bottom: gutter(12); //margin-bottom égale à la gouttière générée dans un layout de 12 colonnes
+    }
+}

@@ -59,7 +59,7 @@ div {
 
 .colonnes {
   background-color: #5f589b;
-  width: 59em;
+  max-width: 59em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,13 +72,57 @@ div {
 
 .colonnes > div {
   background-color: yellow;
-  width: 19em;
+  width: 32.20339%;
   float: left;
-  margin-right: 1em;
+  margin-right: 1.69492%;
 }
 
 .colonnes > div:last-child {
   float: right;
   margin-right: 0;
+}
+
+.galerie {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.galerie:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.galerie .items {
+  width: 23.72881%;
+  float: left;
+  background-color: pink;
+  margin-bottom: 1.69492%;
+}
+
+.galerie .items:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.galerie .items:nth-child(4n + 2) {
+  margin-left: 25.42373%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.galerie .items:nth-child(4n + 3) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.galerie .items:nth-child(4n + 4) {
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  clear: none;
 }
 /*# sourceMappingURL=style.css.map */
