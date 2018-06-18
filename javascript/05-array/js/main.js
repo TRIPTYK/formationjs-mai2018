@@ -1,11 +1,11 @@
 var prenoms = new Array("Anissa", "Gilles", "Stéphane");
-console.log(prenoms);
-console.log(prenoms[2]);
+/* console.log(prenoms);
+console.log(prenoms[2]); */
 
 var villes = [];
 var pays = ["Belgique", "France", "Russie"];
 
-console.log(pays.length);
+//console.log(pays.length);
 
 pays[0];
 pays[1];
@@ -24,14 +24,16 @@ console.log(prenoms);
 prenoms.pop(); // supprime le dernier élément de la liste
 prenoms.shift(); // supprime le premier élément de la liste
 
-var nom = "Anissa Belkheir";
+var nom = "Anissa Belkheir toto";
 var nomArray = nom.split(" ");
-console.log(nomArray);
+console.log("NOM "+nom);
+console.log("SPLIT NOM "+nomArray);
 
 var url = "http://www.triptyk.eu";
 var urlArray = url.split("//");
-console.log(urlArray);
-console.log(urlArray[1]);
+console.log("url = "+url)
+console.log("URL ARRAY = "+urlArray);
+console.log("urlArray[1] = "+urlArray[1]);
 
 var nomReconstitue = nomArray.join("-");
 console.log(nomReconstitue);
