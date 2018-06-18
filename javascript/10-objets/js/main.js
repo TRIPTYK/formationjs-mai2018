@@ -223,3 +223,10 @@ var listeCourses = {
     ],
     "Dimanche": []
 };
+
+for (var key in listeCourses) {
+    console.log('le '+key+" vous avez "+listeCourses[key].length+" élément(s) dans votre liste :");
+    for (var i = 0; i < listeCourses[key].length; i++) {
+        console.log("- "+listeCourses[key][i]);
+    }
+}
