@@ -1,0 +1,27 @@
+button {
+    padding: 1rem 3rem;
+    border: 0;
+    background-color: rgb(94, 163, 228);
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 300px;
+}
+
+a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: #3b6cc7;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(126, 240, 240);
+    color: #000
+}
