@@ -1,0 +1,46 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-shadow: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    line-height: 20px;
+    vertical-align: top; 
+}
+
+[type="text"], textarea {
+    border: 1px solid #666;
+    width: 250px;
+    line-height: 20px;
+    vertical-align: top; 
+}
+
+[type="submit"] {
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    background-color: #666;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.comments div {
+    margin: 1rem 0;
+    padding: 1px 1rem;
+    background-color: #c8f1c2;
+}

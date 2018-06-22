@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>querySelector</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Selector</h1>
+        <section>
+            <h2>Ajouter un commentaire :</h2>
+            <form action="traitement.php" method="post">
+               <p>
+                   <label for="nom">Nom :</label>
+                   <input type="text" id="nom" name="nom" />
+               </p>
+               <p>
+                   <label for="msg">Message :</label>
+                   <textarea id="msg" name="msg"></textarea>
+               </p>
+               <p>
+                   <input type="submit">
+               </p>
+            </form>
+        </section>
+        <section class="comments">
+            <h2>Commentaires : </h2>
+            <!-- <div>
+                <h3>nom</h3>
+                <p>msg</p>
+            </div> -->
+        </section>
+        <button>Supprimer les commentaires</button>
+        
+
+    </div>
+
+
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
