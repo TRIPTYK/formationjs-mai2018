@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+
+        <form action="" method="post">
+
+                <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="prenom">Prénom</label></td>
+                        <td>
+                            <input id="prenom" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nom">Nom</label></td>
+                        <td>
+                            <input id="nom" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="text1">Élément inactif</label></td>
+                        <td>
+                            <input id="text1" type="text" disabled="disabled"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Genre</td>
+                        <td>
+                            <input id="male" name="genre" type="radio" checked="checked"/><label for="male">M</label><input id="female" name="genre" type="radio" /><label for="female">F</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Quels produits vous intéressent?</td>
+                        <td>
+                            <input id="checkbox1" type="checkbox" checked="checked"/><label for="checkbox1">Widgets</label><br />
+                            <input id="checkbox2" type="checkbox" /><label for="checkbox2">Plif Plouf</label><br />
+                            <input id="checkbox3" type="checkbox" checked="checked"/><label for="checkbox3">Poulp' ô Poke</label><br />
+                            <input id="checkbox4" type="checkbox" /><label for="checkbox4">Hein ?</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comments">Commentaires:</label></td>
+                        <td>
+                            <textarea id="comments" cols="40" name="S1" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file1">Fichier</label></td>
+                        <td>
+                            <input id="file1" type="file" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            <input id="submit1" type="submit" value="submit" /> <input id="reset1" type="reset" value="reset" /></td>
+                    </tr>
+                </tbody>
+                </table>
+    
+            </form>
+
+        <script src="../jquery-3.3.1.min.js" type="text/javascript"></script>
+
+        <script src="js/main.js" type="text/javascript"></script>
+    
+</body>
+</html>

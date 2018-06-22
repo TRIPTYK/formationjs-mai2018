@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nonvisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- div#container>(ul#list1>li.a*2+li.b*2+li)+(p.a>span)+(p#para2)+(p.b)+(p#para4)+(p.hidden) -->
+    <div id="container">
+        <ul id="list1">
+            <li class="a">accueil Élement de liste 1</li>
+            <li class="a">présentation Élement de liste 2</li>
+            <li class="b">Élement de liste 3</li>
+            <li class="b">Accueil Élement de liste 4</li>
+            <li></li>
+        </ul>
+        <p class="a" title="bonjour tout le monde">Ceci est un <span>1er paragraphe</span></p>
+        <p id="para2" title="c'est le jour j !">Ceci est un 2eme paragraphe</p>
+        <p class="b">Ceci est un 3eme paragraphe</p>
+        <p id="para4" lang="fr-be">Ceci est un 4eme paragraphe</p>
+        <p class="nonvisible">Je suis caché!</p>
+    </div>
+
+    <script src="../jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript" async></script>
+    
+    
+</body>
+</html>
