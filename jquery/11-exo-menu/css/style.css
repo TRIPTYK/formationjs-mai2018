@@ -21,7 +21,7 @@ ul {
   background-color: #5e5e5e;
 }
 
-.menu a, .menu span {
+.menu > li a, .menu > li > span {
   display: block;
   padding: 8px;
   text-decoration: none;
@@ -29,6 +29,7 @@ ul {
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff;
+  outline: none;
 }
 
 .menu .submenu > li {

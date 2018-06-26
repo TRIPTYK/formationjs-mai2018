@@ -16,18 +16,19 @@ ul {
         &:hover, &.active {
             background-color: #5e5e5e;
         }
-    }
-    %liens { //placeholder
-        display: block;
-        padding: 8px;
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 14px;
-        letter-spacing: 1px;
-        color: #fff;
-    }
-    a, span {
-        @extend %liens;
+        %liens { //placeholder
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #fff;
+            outline: none;
+        }
+        a, > span {
+            @extend %liens;
+        }
     }
     .submenu  {
         > li {
