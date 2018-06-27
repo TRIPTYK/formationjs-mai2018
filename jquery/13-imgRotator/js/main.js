@@ -1,14 +1,14 @@
 (function($){
     $(document).ready(function(){
-        // $('.container div:gt(0)').hide(); // décommenter cette ligne pour la version alternative
+        // $('.container li:gt(0)').hide(); // décommenter cette ligne pour la version alternative
         setInterval(imgRotator, 2000);
         // setInterval(alternative, 2000);
 
     }); //fin du document ready
 
-    function alternative() { //pas de .actuelle ni de .precedente utilisées pour cette version
-        $('.container div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.container');
-    }
+    // function alternative() { //pas de .actuelle ni de .precedente utilisées pour cette version
+    //     $('.container li:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.container');
+    // }
 
     function imgRotator() {
         var currentImage = $('.actuelle');

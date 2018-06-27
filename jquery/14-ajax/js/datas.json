@@ -1,0 +1,22 @@
+[
+    {
+        "firstname" : "Anissa",
+        "lastname" : "Belkheir",
+        "hobbies" : ["toto", "tata", "toutou"]
+    },
+    {
+        "firstname" : "Gilles",
+        "lastname" : "Bertrand",
+        "hobbies" : ["vélo", "squash", "code"]
+    },
+    {
+        "firstname" : "Stéphane",
+        "lastname" : "Meermans",
+        "hobbies" : ["Gin"]
+    },
+    {
+        "firstname" : "Vincent",
+        "lastname" : "Urbain",
+        "hobbies" : ["photo", "marche", "BD"]
+    }
+]

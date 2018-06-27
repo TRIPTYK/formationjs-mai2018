@@ -1,0 +1,17 @@
+[
+    {
+        "title" : "Ma première image",
+        "image" : "images/image1.gif",
+        "thumb" : "images/image1-thumb.jpg"
+    },
+    {
+        "title" : "Ma deuxième image",
+        "image" : "images/image2.gif",
+        "thumb" : "images/image2-thumb.jpg"
+    },
+    {
+        "title" : "Ma troisième image",
+        "image" : "images/image3.gif",
+        "thumb" : "images/image3-thumb.jpg"
+    }
+]
