@@ -29,7 +29,34 @@
 
         }); //fin du click
 
+
+        $('.galerie').on('click', function() {
+            $.ajax({
+                url : "js/images.json",
+                dataType : "json",
+                type : "get",
+                success : afficherGalerie
+            });
+        });
+
     });//fin document ready
+
+        function afficherGalerie(res) {
+            for (var key in res) {
+                // $('.container').append('<h3>titre</h3><div><a href="grande image"><img src="petite image" alt="titre" /></a></div>');
+
+                var contenu = '<h3>'+res[key].title+'</h3>';
+                // var contenu = `<h3>${res[key].title}</h3>`;
+                contenu += '<div><a href="'+res[key].image+'" target="_blank">';
+                contenu += '<img src="'+res[key].thumb+'" alt="'+res[key].title+'" />';
+                contenu += '</a></div>';
+
+                $('.container').append(contenu);
+            }
+        }
+
+
+
 
     function successFunction(result) {
         for (var i = 0; i < result.length; i++) {
