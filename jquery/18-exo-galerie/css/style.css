@@ -1,0 +1,111 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
+header h2 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 20px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: normal;
+}
+
+section {
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px 10px #c7c7c7;
+          box-shadow: inset 0px 0px 10px #c7c7c7;
+  margin-top: 1rem;
+  min-height: 500px;
+}
+
+section > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section .thumbnails {
+  width: 60%;
+  margin-top: 1rem;
+}
+
+section .thumbnails a {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: 0 0 1.367rem 0;
+}
+
+section .thumbnails a img {
+  border: 1px solid #a0a0a0;
+}
+
+section .thumbnails a img.active, section .thumbnails a img:hover {
+  border: 1px solid #fff;
+}
+
+section .preview {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+section .contact {
+  width: 60%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+section .zoom {
+  width: 40%;
+}
+
+section .zoom a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.preload {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
